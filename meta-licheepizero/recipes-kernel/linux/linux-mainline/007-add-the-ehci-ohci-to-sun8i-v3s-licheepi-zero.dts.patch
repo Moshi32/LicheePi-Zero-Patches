@@ -1,0 +1,26 @@
+diff --git a/arch/arm/boot/dts/sun8i-v3s-licheepi-zero.dts b/arch/arm/boot/dts/sun8i-v3s-licheepi-zero.dts
+index 387fc2aa546d..cf2d9fe3bbb7 100644
+--- a/arch/arm/boot/dts/sun8i-v3s-licheepi-zero.dts
++++ b/arch/arm/boot/dts/sun8i-v3s-licheepi-zero.dts
+@@ -77,6 +77,10 @@ 
+ 	};
+ };
+ 
++&ehci0 {
++	status = "okay";
++};
++
+ &mmc0 {
+ 	pinctrl-0 = <&mmc0_pins_a>;
+ 	pinctrl-names = "default";
+@@ -86,6 +90,10 @@ 
+ 	status = "okay";
+ };
+ 
++&ohci0 {
++	status = "okay";
++};
++
+ &uart0 {
+ 	pinctrl-0 = <&uart0_pins_a>;
+ 	pinctrl-names = "default";
